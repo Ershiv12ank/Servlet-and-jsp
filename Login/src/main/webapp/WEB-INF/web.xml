@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         id="WebApp_ID"
+         version="6.0">
+         
+         <servlet>
+         <servlet-name>/log</servlet-name>
+         <servlet-class>in.sp.login.Login</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+          <servlet-name>/log</servlet-name>
+          <url-pattern>/login</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+         <servlet-name>/regester</servlet-name>
+         <servlet-class>in.sp.login.Regester</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+          <servlet-name>/regester</servlet-name>
+          <url-pattern>/regester</url-pattern>
+         </servlet-mapping>
+         
+</web-app>
